@@ -13,6 +13,8 @@
 		304364C72729406600EF3F44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304364C52729406600EF3F44 /* Main.storyboard */; };
 		304364C92729406900EF3F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304364C82729406900EF3F44 /* Assets.xcassets */; };
 		304364CC2729406900EF3F44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304364CA2729406900EF3F44 /* LaunchScreen.storyboard */; };
+		304364D5272940D200EF3F44 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 304364D4272940D200EF3F44 /* Alamofire */; };
+		304364D72729425900EF3F44 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304364D62729425900EF3F44 /* Article.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		304364C82729406900EF3F44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		304364CB2729406900EF3F44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		304364CD2729406900EF3F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304364D62729425900EF3F44 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304364D5272940D200EF3F44 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +64,7 @@
 				304364C12729406600EF3F44 /* SceneDelegate.swift */,
 				304364C32729406600EF3F44 /* ViewController.swift */,
 				304364C52729406600EF3F44 /* Main.storyboard */,
+				304364D62729425900EF3F44 /* Article.swift */,
 				304364C82729406900EF3F44 /* Assets.xcassets */,
 				304364CA2729406900EF3F44 /* LaunchScreen.storyboard */,
 				304364CD2729406900EF3F44 /* Info.plist */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "alamofire-spm-sample";
+			packageProductDependencies = (
+				304364D4272940D200EF3F44 /* Alamofire */,
+			);
 			productName = "alamofire-spm-sample";
 			productReference = 304364BC2729406600EF3F44 /* alamofire-spm-sample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 304364B32729406600EF3F44;
+			packageReferences = (
+				304364D3272940D200EF3F44 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 304364BD2729406600EF3F44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304364D72729425900EF3F44 /* Article.swift in Sources */,
 				304364C42729406600EF3F44 /* ViewController.swift in Sources */,
 				304364C02729406600EF3F44 /* AppDelegate.swift in Sources */,
 				304364C22729406600EF3F44 /* SceneDelegate.swift in Sources */,
@@ -360,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		304364D3272940D200EF3F44 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		304364D4272940D200EF3F44 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 304364D3272940D200EF3F44 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 304364B42729406600EF3F44 /* Project object */;
 }
